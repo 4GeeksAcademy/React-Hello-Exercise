@@ -8,24 +8,25 @@ import { Card } from "./card.js";
 const Home = () => {
 	return (
 		<>
+		<div className="container-fluid px-0">		
 			<Navbar />
-			<div className="container">
-				<div className="row-cols-8 mb-2">
-					<Jumbotron />
-				</div>
-
-				<div class="container-fluid">
-					<div class="row row-cols-4 mt-2">
-						<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
-						<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
-						<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
-						<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
-					</div>
-				</div>
-
-			</div>
+		</div>
+		<div className="container">
+			<div className="row" style={{margin: "0", padding: "0"}}>			
+					<Jumbotron />	
+			</div>			
+			<div class="row mt-2"style={{margin: "0", padding: "0"}}>	
+					<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
+					<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
+					<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
+					<div class="col-lg-3 col-md-6 col-sm-12"><Card /></div>
+			</div>	
+		</div>
+		<div className="container-fluid px-0">
 			<MyFooter />
-		</>
+		</div>
+			</>
+	
 
 	);
 };
